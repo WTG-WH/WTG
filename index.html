@@ -19,6 +19,8 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    scroll-behavior: smooth;
+    padding-top: 60px; /* Offset for the fixed navbar height */
 
     /* --- Full-Page Background Image --- */
     background-image: url('WhatsApp Image 2025-09-19 at 23.15.47_2556eeee.jpg');
@@ -103,14 +105,58 @@ p {
     border-radius: 10px;
     margin-top: 15px;
 }
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #fae7c7; 
+  overflow: hidden;
+position: fixed; /* Keep it floating */
+top: 0;          /* Lock it to the top */
+}
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #b98e5b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size: 15px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: white;
+background-color: linear-gradient(45deg, #b98e5b, #fce5c6)
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+ /*background-color: linear-gradient(45deg, #b98e5b, #fce5c6); brown wellness gradient  background-color: #b98e5b;color: white;*/
+  
+}
+
+section {
+  scroll-margin-top: 60px; /* Adjust based on your navbar height */
+}
 </style>
+
 <body>
 
     <div class="container">
         <div class="profile-section">
             <img src="517388507_17853396909473095_6493988166343914675_n.jpg" alt="" class="profile-photo">
             <h1>What The Gut - Women's Wellness</h1>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="#socials">Socials</a>
+  <a href="#socacize">Socacize</a>
+  <a href="#events">Events</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
         <p><I>✨Certified Holistic Perimenopause & Menopause Coach</I></p>
            
         
@@ -124,7 +170,7 @@ p {
                 Together, we’ll learn the language of your body so you can thrive through midlife and beyond. 
                 <br>
             <br> 
-                Welcome! I'm happy you're here!Scroll down to connect on all the things to see my offerings and upcomming events!</P>
+                Welcome! I'm happy you're here! Scroll down to connect on all the things to see my offerings and upcomming events!</P>
 
             <br>
 
@@ -151,6 +197,7 @@ Learning the language of your body<br> changes everything.</p>
             </a>
 
         <br>
+<section id="socials">
             <a href="https://www.instagram.com/whatthegut.womenswellness/" class="link-button" target="_blank">
                 <i class="fab fa-instagram"></i>
                 <span class="link-text">Instagram</span>
@@ -168,17 +215,20 @@ Learning the language of your body<br> changes everything.</p>
                 <i class="fa-brands fa-linkedin"></i>
                 <span class="link-text">LinkedIn</span>
             </a>
-  
+  <section id="contact">
             <a href="mailto:whatthegutwomenswellness@gmail.com" class="link-button" target="_blank">
                 <i class="fas fa-envelope"></i>
                 <span class="link-text">Email</span>
             </a>
-
+	</section>
+</section>
 <br>
+<section id="socacize">
 <h3>What The Gut presents Socacize with Nicola!🎉 </h3>
 <p>
 Socacize Fitness: A unique, exhilarating blend of Caribbean/African dance and effective fitness movement. Come sweat with us!
 </p>
+</section>
 <a href="https://www.instagram.com/socacizewithnicola?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="link-button" target="_blank">
                 <i class="fab fa-instagram"></i>
                 <span class="link-text">Socacize with Nicola </span>
@@ -192,6 +242,7 @@ Socacize Fitness: A unique, exhilarating blend of Caribbean/African dance and ef
 
         </div>
         <br>
+<section id="events">
              <p>Event Links: </p>
             <a href="https://reflectresetrenewtherapyservices.com/events" class="link-button" target="_blank">
                 <i class="fa-regular fa-calendar-check"></i>
@@ -204,6 +255,7 @@ Socacize Fitness: A unique, exhilarating blend of Caribbean/African dance and ef
             <a href="https://www.picktime.com/book/c/1rCXi4k4g3QMh6fCkoRIro" class="link-button" target="_blank">
                 <i class="fa-regular fa-calendar-check"></i>
                 <span class="link-text">Dance Fitness Reunioun Masterclass</span>
+</section>
             </a>        
         <img src="Advocate.jpg" alt="Advocate" class="advocate-img">
 
